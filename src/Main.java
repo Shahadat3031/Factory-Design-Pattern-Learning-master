@@ -15,19 +15,19 @@ import VehiclesFactoryExample.inerfaces.VehicleFactory;
 public class Main {
     public static void main(String[] args) {
 
-        VehicleFactory luxuryVehicleFactory = new LuxuryVehicleFactory();
-        Car luxuryCar = luxuryVehicleFactory.createCar();
-        Bike luxuryBike = luxuryVehicleFactory.createBike();
-        luxuryCar.ride();
-        luxuryBike.ride();
+//        VehicleFactory luxuryVehicleFactory = new LuxuryVehicleFactory();
+//        Car luxuryCar = luxuryVehicleFactory.createCar();
+//        Bike luxuryBike = luxuryVehicleFactory.createBike();
+//        luxuryCar.ride();
+//        luxuryBike.ride();
+//
+//        VehicleFactory sportsCarFactory = new SportsVehiclesFactory();
+//        Car sportsCar = sportsCarFactory.createCar();
+//        Bike sportsBike = sportsCarFactory.createBike();
+//        sportsCar.ride();
+//        sportsBike.ride();
 
-        VehicleFactory sportsCarFactory = new SportsVehiclesFactory();
-        Car sportsCar = sportsCarFactory.createCar();
-        Bike sportsBike = sportsCarFactory.createBike();
-        sportsCar.ride();
-        sportsBike.ride();
-
-        CreditCardFactory creditCardFactory = new CreditCardFactory();
+        CardFactory creditCardFactory = new CreditCardFactory();
         CardVerification creditCardVerification =  creditCardFactory.createCardVerification();
         CardAuthorization creditCardAuthorization =  creditCardFactory.createCardAuthorization();
         CardConfirmation creditCardConfirmation =  creditCardFactory.createCardConfirmation();
@@ -36,7 +36,7 @@ public class Main {
         creditCardAuthorization.authorizeCard();
         creditCardConfirmation.confirmCard();
 
-        DebitCardFactory debitCardFactory = new DebitCardFactory();
+        CardFactory debitCardFactory = new DebitCardFactory();
         CardVerification debitCardVerification = debitCardFactory.createCardVerification();
         CardAuthorization debitCardAuthorization = debitCardFactory.createCardAuthorization();
         CardConfirmation debitCardConfirmation = debitCardFactory.createCardConfirmation();
